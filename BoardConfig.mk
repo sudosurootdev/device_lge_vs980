@@ -15,6 +15,7 @@
 #
 
 include device/lge/g2-common/BoardConfigCommon.mk
+TARGET_KERNEL_SOURCE := kernel/lge/msm8974-youshouldfeelbadthatthisisneccessary
 
 TARGET_KERNEL_CONFIG := vs980_defconfig
 
