@@ -27,6 +27,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.cdma.home.operator.alpha=Verizon \
 	ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83
 
+# GPS configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps.conf:system/etc/gps.conf
+
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
