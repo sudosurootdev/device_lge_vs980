@@ -23,12 +23,17 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.lteOnCdmaDevice=1 \
 	ro.telephony.default_network=10 \
-	ro.cdma.home.operator.numeric=311480 \
+	ro.cdma.home.operator.numeric=310004 \
 	ro.cdma.home.operator.alpha=Verizon \
-	ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
-        ro.ril.force_eri_from_xml=true \
-        ro.telephony.get_imsi_from_sim=true \
-        ril.subscription.types=NV,RUIM
+	ro.cdma.homesystem=66,67,69,71,72,74 \
+	ro.ril.force_eri_from_xml=true \
+	ro.telephony.get_imsi_from_sim=true \
+	ril.subscription.types=NV,RUIM \
+	ro.ril.svdo=true \
+	persist.data_netmgrd_mtu=1428 \
+	persist.qcril.disable_retry=true \
+	android.telephony.apn-restore=1800000 \
+	vzw.telephony.appsapn-restore=60000
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
