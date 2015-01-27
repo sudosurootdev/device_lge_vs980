@@ -25,17 +25,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=10 \
 	ro.cdma.home.operator.numeric=310004 \
 	ro.cdma.home.operator.alpha=Verizon \
-	ro.cdma.homesystem=66,67,69,71,72,74 \
+	ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
 	ro.ril.force_eri_from_xml=true \
 	ro.telephony.get_imsi_from_sim=true \
 	ril.subscription.types=NV,RUIM
 
-# GPS configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps.conf:system/etc/gps.conf
-
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
+ 	$(LOCAL_PATH)/gps.conf:system/etc/gps.conf \
+	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
+	frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml
 
 # NFC packages
 PRODUCT_PACKAGES += \
