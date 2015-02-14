@@ -31,7 +31,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ril.subscription.types=NV,RUIM
 
 PRODUCT_COPY_FILES += \
- 	$(LOCAL_PATH)/gps.conf:system/etc/gps.conf \
 	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
 	frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml
 
